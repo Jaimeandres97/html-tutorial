@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial=scale=1.0">
+        <meta name="description" content="AUTHORIZATION FORM">
+        <meta name="keywords" content="FORM, LEARNING, PROGRAMING">
+        <meta name="author" content="Jaime Moreno"> 
+        <title>COURSE POLL</title>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>Please enter your contact details</legend>
+                <label for="name">
+                    Your Name (Required): <input type="text" id="full_name" name="full_name" required>
+                    <abrr title="required" aria-label="required"></abrr>
+                </label>
+                <br>
+                <label for="email">
+                    E-mail address (Required): <input type="text" id="email_adress" name="email_adress" required>
+                    <abrr title="required" aria-label="required"></abrr>
+                </label>
+                <br>
+                <label for="phone_number">
+                    Phone number (+57) (optional): <input type="text" id="phone_number" name="phone_number">
+                    <abrr title="required" aria-label="required"></abrr>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Please select the courses that you are interested in (required)</legend>  
+                <input type="checkbox" id="web_developer" value="web_developer" name="courses"><label for="cbox1">Web Developer</label><br>
+                <input type="checkbox" id="react_developer" value="react_developer" name="courses"> <label for="cbox2">React Developer</label><br> 
+                <input type="checkbox" id="fullstack_developer" value="fullstack_developer" name="courses"> <label for="cbox3">Fullstack Developer</label><br> 
+                <input type="checkbox" id="other" value="other" name="courses"> <label for="cbox3">Other</label> 
+            </fieldset>
+            <p>Please enter a message (optional):</p>
+            <label for="text_area"></label>
+            <textarea id="text_area" name="msg" cols="75" rows="5"></textarea><br>
+            <button type="submit">Send message</button>
+            <button type="reset">Reset form</button>
+        </form>
+    </body>
+</html>
